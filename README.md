@@ -127,7 +127,7 @@ All your changes should be in the 'extract_data' function
 你的任务是使用 BeautifulSoup 处理 HTML，提取出"__EVENTVALIDATION”和“__VIEWSTATE”的隐藏表格字段值，并在数据字典中设置相应的值。
 你只需更改“extract_data”函数
 
-### carriers
+### carriers.py
 
 运营商列表
 
@@ -157,3 +157,51 @@ Please note that the function 'make_request()' is provided for your reference
 only. You will not be able to to actually use it from within the Udacity web UI.
 
 请注意，函数“make_request()”仅供参考。你实际上无法在优达学城的网络 UI 中使用该函数。
+
+### airports.py
+
+练习: 机场列表
+
+Complete the 'extract_airports()' function so that it returns a list of airport codes, excluding any combinations like "All".
+
+请完成“extract_airports()”函数，使其返回机场代码列表，并删除任何组合内容，例如“All”。
+
+Refer to the 'options.html' file in the tab above for a stripped down version
+of what is actually on the website. The test() assertions are based on the
+given file.
+
+请参阅上述标签中的“options.html”文件，了解实际网站的缩减版。test() 声明是基于给定的文件。
+
+### process.py
+
+处理所有数据
+
+Let's assume that you combined the code from the previous 2 exercises with code
+from the lesson on how to build requests, and downloaded all the data locally.
+The files are in a directory "data", named after the carrier and airport:
+"{}-{}.html".format(carrier, airport), for example "FL-ATL.html".
+
+假设你将上两个练习中的代码与关于如何构建请求的课程中代码相结合，并将所有数据下载到了本地。文件位于目录“data”下，按照航空公司和机场命名："{}-{}.html".format(carrier, airport)，例如“FL-ATL.html”。
+
+The table with flight info has a table class="dataTDRight". Your task is to
+use 'process_file()' to extract the flight data from that table as a list of
+dictionaries, each dictionary containing relevant data from the file and table
+row. This is an example of the data structure you should return:
+
+包含航班信息的表格具有一个表格类“dataTDRight”。你的任务是使用“process_file()”从该表格中提取航班数据，并作为字典列表，每个字典包含文件中的相关信息和表格行。以下是你应该返回的数据结构示例：
+
+Note - year, month, and the flight data should be integers.
+You should skip the rows that contain the TOTAL data for a year.
+注意：年月和航班数据应该是整型。你应该跳过包含一年 TOTAL 数据的行。
+
+There are couple of helper functions to deal with the data files.
+Please do not change them for grading purposes.
+All your changes should be in the 'process_file()' function.
+
+你可以使用几个辅助函数来处理数据文件。为了方便打分，请勿更改这些辅助函数。你只需更改“process_file()”函数。
+
+The 'data/FL-ATL.html' file in the tab above is only a part of the full data,
+covering data through 2003. The test() code will be run on the full table, but
+the given file should provide an example of what you will get.
+
+上述标签中的“data/FL-ATL.html”文件只是完整数据的一部分，涵盖的是截止 2003 年的数据。test() 代码将使用完整的表格，但是给定文件应该提供一个你将获得的数据示例。
