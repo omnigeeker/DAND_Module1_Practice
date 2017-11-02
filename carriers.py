@@ -25,6 +25,12 @@ def extract_carriers(page):
     with open(page, "r") as html:
         # do something here to find the necessary values
         soup = BeautifulSoup(html, "lxml")
+        carreirlist = soup.find(id="CarrierList")
+        carriers = carreirlist.find_all("option")
+        for carreir in carriers:
+            v = carreir["value"]
+            if v.find("All") >= 0: continue
+            data.append(v)
 
     return data
 
@@ -53,6 +59,7 @@ def test():
     assert len(data) == 16
     assert "FL" in data
     assert "NK" in data
+    print "Done"
 
 if __name__ == "__main__":
     test()
