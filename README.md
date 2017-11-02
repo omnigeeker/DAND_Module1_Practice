@@ -110,6 +110,46 @@ Your task here is to extract data from xml on authors of an article and add it t
 请参阅提供的数据结构，了解我们期望的格式。
 名字、姓氏和电子邮箱标签应该直接对应字典关键字，但是你需要从"insr"标签中提取属性，并将其添加到字典关键字“insr”列表中
 
+### patent.py
+
+专利数据库
+
+查看下一道测试题，以了解与该 XML 文件有关的特定问题。
+
+This and the following exercise are using US Patent database. The patent.data
+file is a small excerpt of much larger datafiles that are available for
+download from US Patent website. These files are pretty large ( >100 MB each).
+The original file is ~600MB large, you might not be able to open it in a text
+editor.
+
+这道练习和下面的练习使用的是美国专利数据库。patent.data 文件是一个更加庞大的数据文件（可以从美国专利网站上下载）的摘要部分。这些文件非常大（每个都超过 100 MB）。原始文件大概 600 MB，你可能无法在文本编辑器中打开这些文件。
+
+The data itself is in XML, however there is a problem with how it's formatted.
+Please run this script and observe the error. Then find the line that is
+causing the error. You can do that by just looking at the datafile in the web
+UI, or programmatically. For quiz purposes it does not matter, but as an
+exercise we suggest that you try to do it programmatically.
+
+数据本身是 XML 格式，但是格式存在问题。请运行此脚本并观察错误。然后找到导致错误的行。你可以直接在网络 UI 中查看数据文件，或者通过程序方式找到错误的行。对于这道测验，哪种方法都可以，但是建议你采用程序方式。
+
+NOTE: You do not need to correct the error - for now, just find where the error
+is occurring.
+
+注意：你不需要纠正该错误，暂时只需知道错误所在的行。
+
+### split_data.py
+处理专利
+
+So, the problem is that the gigantic file is actually not a valid XML, 
+because it has several root elements, and XML declarations.
+It is, a matter of fact, a collection of a lot of concatenated XML documents.
+So, one solution would be to split the file into separate documents,
+so that you can process the resulting files as valid XML documents.
+
+问题是庞大的文件实际上不是有效的 XML，因为它有几个根元素和 XML 声明。
+实际上是多个相连的 XML 文档构成的。一种解决方法是将文件拆分为多个文档，
+并将这些文档处理为有效的 XML 文档。
+
 # HTML
 
 ### html_soup.py 

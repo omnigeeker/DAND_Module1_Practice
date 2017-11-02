@@ -99,3 +99,11 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+patent\.data-0
+
+patent\.data-1
+
+patent\.data-2
+
+patent\.data-3
