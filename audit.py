@@ -42,10 +42,10 @@ FIELDS = ["name", "timeZone_label", "utcOffset", "homepage", "governmentType_lab
 
 def audit_file(filename, fields):
     fieldtypes = {}
-    for field in fields:
-        fieldtypes[field] = set()
 
     # YOUR CODE HERE
+    for field in fields:
+        fieldtypes[field] = set()
     with open(filename, "r") as f:
         reader = csv.DictReader(f)
         reader.next()
