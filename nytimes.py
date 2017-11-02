@@ -44,8 +44,8 @@ def article_overview(kind, period):
     titles = []
     urls =[]
     # YOUR CODE HERE
-    # save_file(kind, period)
-    # data = get_from_file(kind, period)
+    save_file(kind, period)
+    data = get_from_file(kind, period)
 
     for article in data:
         section = article["section"]
@@ -56,8 +56,6 @@ def article_overview(kind, period):
                 for mm in m["media-metadata"]:
                     if mm["format"] == "Standard Thumbnail":
                         urls.append(mm["url"])
-    print len(titles)
-    print len(urls)
 
     return (titles, urls)
 

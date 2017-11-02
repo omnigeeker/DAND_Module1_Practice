@@ -91,3 +91,21 @@ the API by yourself.
 
 # Xml
 
+### authors.py
+
+提取数据
+
+Your task here is to extract data from xml on authors of an article and add it to a list, one item for an author. See the provided data structure for the expected format. The tags for first name, surname and email should map directly to the dictionary keys
+
+你的任务是从 xml 中提取关于文章作者的数据， 并将其添加到列表中，一个作者对应一个条目。 
+请参阅提供的数据结构，了解我们期望的格式。
+名字、姓氏和电子邮箱标签应该直接对应字典关键字
+
+处理属性
+[ElementTree 文档](http://docs.python.org/2/library/xml.etree.elementtree.html#module-xml.etree.ElementTree)
+
+Your task here is to extract data from xml on authors of an article and add it to a list, one item for an author. See the provided data structure for the expected format. The tags for first name, surname and email should map directly to the dictionary keys, but you have to extract the attributes from the "insr" tag and add them to the list for the dictionary key "insr"
+
+你的任务是从 xml 中提取关于文章作者的数据，并将其添加到列表中，一个作者对应一个条目。
+请参阅提供的数据结构，了解我们期望的格式。
+名字、姓氏和电子邮箱标签应该直接对应字典关键字，但是你需要从"insr"标签中提取属性，并将其添加到字典关键字“insr”列表中
