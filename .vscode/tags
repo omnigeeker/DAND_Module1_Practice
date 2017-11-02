@@ -4,21 +4,33 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
-API_KEY	nytimes.py	/^API_KEY = { "popular": "",$/;"	kind:variable	line:32
+API_KEY	nytimes.py	/^API_KEY = { "popular": "34fe9eb1915144e9aa15c273572c9a99",$/;"	kind:variable	line:32
+BeautifulSoup	html_soup.py	/^from bs4 import BeautifulSoup$/;"	kind:namespace	line:9
 DATADIR	parsecvs.py	/^DATADIR = ""$/;"	kind:variable	line:19
 DATAFILE	parsecvs.py	/^DATAFILE = "745090.csv"$/;"	kind:variable	line:20
+ET	authors.py	/^import xml.etree.ElementTree as ET$/;"	kind:namespace	line:8
 URL_MAIN	nytimes.py	/^URL_MAIN = "http:\/\/api.nytimes.com\/svc\/"$/;"	kind:variable	line:30
 URL_POPULAR	nytimes.py	/^URL_POPULAR = URL_MAIN + "mostpopular\/v2\/"$/;"	kind:variable	line:31
 ZipFile	excel_csv.py	/^from zipfile import ZipFile$/;"	kind:namespace	line:13
+article_file	authors.py	/^article_file = "exampleResearchArticle.xml"$/;"	kind:variable	line:10
 article_overview	nytimes.py	/^def article_overview(kind, period):$/;"	kind:function	line:42
+authors.py	authors.py	1;"	kind:file	line:1
 codecs	nytimes.py	/^import codecs$/;"	kind:namespace	line:27
 csv	excel_csv.py	/^import csv$/;"	kind:namespace	line:12
 csv	parsecvs.py	/^import csv$/;"	kind:namespace	line:16
 datafile	excel_csv.py	/^datafile = "2013_ERCOT_Hourly_Load_Data.xls"$/;"	kind:variable	line:15
+etree	authors.py	/^import xml.etree.ElementTree as ET$/;"	kind:namespace	line:8
 excel_csv.py	excel_csv.py	1;"	kind:file	line:1
+extract_data	html_soup.py	/^def extract_data(page):$/;"	kind:function	line:15
+get_authors	authors.py	/^def get_authors(root):$/;"	kind:function	line:18
 get_from_file	nytimes.py	/^def get_from_file(kind, period):$/;"	kind:function	line:36
-get_popular	nytimes.py	/^def get_popular(url, kind, days, section="all-sections", offset=0):$/;"	kind:function	line:69
+get_popular	nytimes.py	/^def get_popular(url, kind, days, section="all-sections", offset=0):$/;"	kind:function	line:81
+get_root	authors.py	/^def get_root(fname):$/;"	kind:function	line:13
+html_page	html_soup.py	/^html_page = "page_source.html"$/;"	kind:variable	line:13
+html_soup.py	html_soup.py	1;"	kind:file	line:1
+json	html_soup.py	/^import json$/;"	kind:namespace	line:11
 json	nytimes.py	/^import json$/;"	kind:namespace	line:26
+make_request	html_soup.py	/^def make_request(data):$/;"	kind:function	line:33
 nytimes.py	nytimes.py	1;"	kind:file	line:1
 open_zip	excel_csv.py	/^def open_zip(datafile):$/;"	kind:function	line:19
 os	excel_csv.py	/^import os$/;"	kind:namespace	line:11
@@ -27,11 +39,15 @@ outfile	excel_csv.py	/^outfile = "2013_Max_Loads.csv"$/;"	kind:variable	line:16
 parse_file	excel_csv.py	/^def parse_file(datafile):$/;"	kind:function	line:24
 parse_file	parsecvs.py	/^def parse_file(datafile):$/;"	kind:function	line:22
 parsecvs.py	parsecvs.py	1;"	kind:file	line:1
-query_site	nytimes.py	/^def query_site(url, target, offset):$/;"	kind:function	line:51
+query_site	nytimes.py	/^def query_site(url, target, offset):$/;"	kind:function	line:63
+requests	html_soup.py	/^import requests$/;"	kind:namespace	line:10
 requests	nytimes.py	/^import requests$/;"	kind:namespace	line:28
 save_file	excel_csv.py	/^def save_file(data, filename):$/;"	kind:function	line:55
-save_file	nytimes.py	/^def save_file(kind, period):$/;"	kind:function	line:85
+save_file	nytimes.py	/^def save_file(kind, period):$/;"	kind:function	line:97
+test	authors.py	/^def test():$/;"	kind:function	line:42
 test	excel_csv.py	/^def test():$/;"	kind:function	line:62
-test	nytimes.py	/^def test():$/;"	kind:function	line:99
+test	html_soup.py	/^def test():$/;"	kind:function	line:50
+test	nytimes.py	/^def test():$/;"	kind:function	line:111
 test	parsecvs.py	/^def test():$/;"	kind:function	line:38
 xlrd	excel_csv.py	/^import xlrd$/;"	kind:namespace	line:10
+xml	authors.py	/^import xml.etree.ElementTree as ET$/;"	kind:namespace	line:8

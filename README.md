@@ -109,3 +109,20 @@ Your task here is to extract data from xml on authors of an article and add it t
 你的任务是从 xml 中提取关于文章作者的数据，并将其添加到列表中，一个作者对应一个条目。
 请参阅提供的数据结构，了解我们期望的格式。
 名字、姓氏和电子邮箱标签应该直接对应字典关键字，但是你需要从"insr"标签中提取属性，并将其添加到字典关键字“insr”列表中
+
+# HTML
+
+### html_soup.py 
+
+使用 Beautiful Soup
+[Beautiful Soup 文档](http://www.crummy.com/software/BeautifulSoup/bs4/doc/)
+
+Please note that the function 'make_request' is provided for your reference only.
+You will not be able to to actually use it from within the Udacity web UI.
+Your task is to process the HTML using BeautifulSoup, extract the hidden form field values for "__EVENTVALIDATION" and "__VIEWSTATE" and set the appropriate values in the data dictionary.
+All your changes should be in the 'extract_data' function
+
+请注意，函数“make_request”仅供参考。
+你实际上无法在优达学城的网络 UI 中使用该函数。
+你的任务是使用 BeautifulSoup 处理 HTML，提取出"__EVENTVALIDATION”和“__VIEWSTATE”的隐藏表格字段值，并在数据字典中设置相应的值。
+你只需更改“extract_data”函数
