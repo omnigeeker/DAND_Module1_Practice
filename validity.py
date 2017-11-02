@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 """
 Your task is to check the "productionStartYear" of the DBPedia autos datafile for valid values.
 The following things should be done:
@@ -30,6 +31,34 @@ def process_file(input_file, output_good, output_bad):
         header = reader.fieldnames
 
         #COMPLETE THIS FUNCTION
+        YOURDATA = []
+        BADDATA = []
+        
+        for row in reader:
+            # validate URI value
+            if row['URI'].find("dbpedia.org") < 0:
+                continue
+
+            productionStartYear = row['productionStartYear']
+            split = productionStartYear.find('-')
+            # check if the field "productionStartYear" contains a year
+            if split != 4:
+                #print productionStartYear
+                BADDATA.append(row)
+                continue
+            # check if the year is in range 1886-2014
+            try:
+                year = int(productionStartYear[:4])
+                if year < 1886 or year > 2014:
+                    #print productionStartYear
+                    BADDATA.append(row)
+                    continue
+            except:
+                BADDATA.append(row)
+                continue
+            # convert the value of the field to be just a year (not full datetime)
+            row['productionStartYear'] = year
+            YOURDATA.append(row)
 
     # This is just an example on how you can use csv.DictWriter
     # Remember that you have to output 2 files
@@ -37,6 +66,12 @@ def process_file(input_file, output_good, output_bad):
         writer = csv.DictWriter(g, delimiter=",", fieldnames= header)
         writer.writeheader()
         for row in YOURDATA:
+            writer.writerow(row)
+
+    with open(output_bad, "w") as g:
+        writer = csv.DictWriter(g, delimiter=",", fieldnames= header)
+        writer.writeheader()
+        for row in BADDATA:
             writer.writerow(row)
 
 def test():
