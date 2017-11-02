@@ -20,11 +20,26 @@ import pprint
 
 CITIES = 'cities.csv'
 
-
 def fix_area(area):
-
     # YOUR CODE HERE
-
+    if area == '' or area == 'NULL':
+        area = None
+    elif area[0] == '{':
+        str = area[1:len(area)-1]
+        items = str.split('|')
+        maxlen = 0
+        v = 0
+        for item in items:
+            len_ = len(item.split('+')[0])
+            if len_ > maxlen: 
+                maxlen = len_
+                v = item
+        area = float(v)
+    else:
+        try:
+            area = float(v)
+        except:
+            pass
     return area
 
 def process_file(filename):
@@ -59,7 +74,6 @@ def test():
     assert data[8]["areaLand"] == 55166700.0
     assert data[20]["areaLand"] == 14581600.0
     assert data[33]["areaLand"] == 20564500.0    
-
 
 if __name__ == "__main__":
     test()
