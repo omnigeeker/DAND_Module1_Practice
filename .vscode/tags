@@ -1,0 +1,37 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+API_KEY	nytimes.py	/^API_KEY = { "popular": "",$/;"	kind:variable	line:32
+DATADIR	parsecvs.py	/^DATADIR = ""$/;"	kind:variable	line:19
+DATAFILE	parsecvs.py	/^DATAFILE = "745090.csv"$/;"	kind:variable	line:20
+URL_MAIN	nytimes.py	/^URL_MAIN = "http:\/\/api.nytimes.com\/svc\/"$/;"	kind:variable	line:30
+URL_POPULAR	nytimes.py	/^URL_POPULAR = URL_MAIN + "mostpopular\/v2\/"$/;"	kind:variable	line:31
+ZipFile	excel_csv.py	/^from zipfile import ZipFile$/;"	kind:namespace	line:13
+article_overview	nytimes.py	/^def article_overview(kind, period):$/;"	kind:function	line:42
+codecs	nytimes.py	/^import codecs$/;"	kind:namespace	line:27
+csv	excel_csv.py	/^import csv$/;"	kind:namespace	line:12
+csv	parsecvs.py	/^import csv$/;"	kind:namespace	line:16
+datafile	excel_csv.py	/^datafile = "2013_ERCOT_Hourly_Load_Data.xls"$/;"	kind:variable	line:15
+excel_csv.py	excel_csv.py	1;"	kind:file	line:1
+get_from_file	nytimes.py	/^def get_from_file(kind, period):$/;"	kind:function	line:36
+get_popular	nytimes.py	/^def get_popular(url, kind, days, section="all-sections", offset=0):$/;"	kind:function	line:69
+json	nytimes.py	/^import json$/;"	kind:namespace	line:26
+nytimes.py	nytimes.py	1;"	kind:file	line:1
+open_zip	excel_csv.py	/^def open_zip(datafile):$/;"	kind:function	line:19
+os	excel_csv.py	/^import os$/;"	kind:namespace	line:11
+os	parsecvs.py	/^import os$/;"	kind:namespace	line:17
+outfile	excel_csv.py	/^outfile = "2013_Max_Loads.csv"$/;"	kind:variable	line:16
+parse_file	excel_csv.py	/^def parse_file(datafile):$/;"	kind:function	line:24
+parse_file	parsecvs.py	/^def parse_file(datafile):$/;"	kind:function	line:22
+parsecvs.py	parsecvs.py	1;"	kind:file	line:1
+query_site	nytimes.py	/^def query_site(url, target, offset):$/;"	kind:function	line:51
+requests	nytimes.py	/^import requests$/;"	kind:namespace	line:28
+save_file	excel_csv.py	/^def save_file(data, filename):$/;"	kind:function	line:55
+save_file	nytimes.py	/^def save_file(kind, period):$/;"	kind:function	line:85
+test	excel_csv.py	/^def test():$/;"	kind:function	line:62
+test	nytimes.py	/^def test():$/;"	kind:function	line:99
+test	parsecvs.py	/^def test():$/;"	kind:function	line:38
+xlrd	excel_csv.py	/^import xlrd$/;"	kind:namespace	line:10

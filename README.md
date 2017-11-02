@@ -87,5 +87,7 @@ the API by yourself.
 
 你只需对article_overview() 函数做出更改。请参阅test() 函数，了解输出列表的元素示例。其他函数只是便于你自己访问相关 API。
 
+如果你想了解更多信息，或想自行查询网站，请阅读[针对最受欢迎API的《纽约时报》开发者文档](http://developer.nytimes.com/docs/most_popular_api)和[为《纽约时报》申请你自己的 API 密钥](http://developer.nytimes.com/page)。
+
 # Xml
 
